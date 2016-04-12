@@ -11,7 +11,7 @@ Package.onUse(function(api) {
   api.use('ecmascript');
   api.use('underscore');
   api.use('fourseven:scss@3.4.1');
-  api.use('std:accounts-ui@1.1.13');
+  api.use('std:accounts-ui@1.1.19');
 
   api.addFiles([
     'styles.scss', 'social-buttons.css'
