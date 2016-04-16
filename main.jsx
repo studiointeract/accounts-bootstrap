@@ -139,6 +139,7 @@ class Field extends Accounts.ui.Field {
                className="form-control"
                name={ id }
                type={ type }
+               ref={ (ref) => this.input = ref }
                autoCapitalize={ type == 'email' ? 'none' : false }
                autoCorrect="off"
                onChange={ onChange }
