@@ -1,4 +1,4 @@
-# Bootstrap UI - Accounts UI for React in Meteor 1.3
+# Bootstrap UI - Accounts UI for React in Meteor
 
 Current version 1.2.0
 
@@ -34,7 +34,7 @@ We support the standard [configuration in the account-ui package](http://docs.me
 
 ### [Accounts.ui.config(options)](https://github.com/studiointeract/accounts-ui#configuration)
 
-### Example setup (Meteor 1.3)
+### Example setup
 
 `meteor add accounts-password`  
 `meteor add twbs:bootstrap`  
@@ -57,7 +57,7 @@ if (Meteor.isClient) {
 
 ```
 
-## Example setup using FlowRouter (Meteor 1.3)
+## Example setup using FlowRouter
 
 `meteor add accounts-password`  
 `meteor add twbs:bootstrap`  
