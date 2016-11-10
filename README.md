@@ -34,7 +34,7 @@ We support the standard [configuration in the account-ui package](http://docs.me
 
 ### [Accounts.ui.config(options)](https://github.com/studiointeract/accounts-ui#configuration)
 
-### Example setup
+## Example setup
 
 `meteor add accounts-password`  
 `meteor add twbs:bootstrap`  
