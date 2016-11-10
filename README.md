@@ -1,6 +1,6 @@
 # Bootstrap UI - Accounts UI for React in Meteor 1.3
 
-Current version 1.1.2
+Current version 1.2.0
 
 Support Bootstrap 3 & 4
 
