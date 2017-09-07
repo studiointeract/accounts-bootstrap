@@ -128,7 +128,8 @@ class Field extends Accounts.ui.Field {
       onChange,
       required = false,
       className,
-      defaultValue = ""
+      defaultValue = "",
+      message = ""
     } = this.props;
     const { mount = true } = this.state;
     return mount ? (
@@ -146,6 +147,10 @@ class Field extends Accounts.ui.Field {
                placeholder={ hint }
                defaultValue={ defaultValue }
                required={required ? "required" : ""} />
+        {message && (
+          <span className={['message', message.type].join(' ').trim()}>
+            {message.message}</span>
+        )}
       </div>
     ) : null;
   }
