@@ -134,13 +134,13 @@ class Field extends Accounts.ui.Field {
     return mount ? (
       <div className={["form-group", required ? "required" : ""].join(' ')}>
         <label htmlFor={ id } className="form-control-label control-label">{ label }</label>
-        <input id="password" className="form-control" name="password" style={{display: 'none'}} />
+        {/*}<input id="password" className="form-control" name="password" style={{display: 'none'}} /> */}
         <input id={ id }
                className="form-control"
                name={ id }
                type={ type }
                ref={ (ref) => this.input = ref }
-               autoCapitalize={ type == 'email' ? 'none' : false }
+               autoCapitalize={ type == 'email' ? 'none' : undefined }
                autoCorrect="off"
                onChange={ onChange }
                placeholder={ hint }
