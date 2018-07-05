@@ -1,14 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Accounts, STATES } from 'meteor/std:accounts-ui';
 
-/**
- * Form.propTypes = {
- *   fields: React.PropTypes.object.isRequired,
- *   buttons: React.PropTypes.object.isRequired,
- *   error: React.PropTypes.string,
- *   ready: React.PropTypes.bool
- * };
- */
 class Form extends Accounts.ui.Form {
   render() {
     const {
@@ -70,6 +63,13 @@ class Form extends Accounts.ui.Form {
     );
   }
 }
+
+Form.propTypes = {
+  fields: PropTypes.object.isRequired,
+  buttons: PropTypes.object.isRequired,
+  error: PropTypes.string,
+  ready: PropTypes.bool
+};
 
 class Buttons extends Accounts.ui.Buttons {
 }
@@ -134,13 +134,13 @@ class Field extends Accounts.ui.Field {
     return mount ? (
       <div className={["form-group", required ? "required" : ""].join(' ')}>
         <label htmlFor={ id } className="form-control-label control-label">{ label }</label>
-        <input id="password" className="form-control" name="password" style={{display: 'none'}} />
+        {/*}<input id="password" className="form-control" name="password" style={{display: 'none'}} /> */}
         <input id={ id }
                className="form-control"
                name={ id }
                type={ type }
                ref={ (ref) => this.input = ref }
-               autoCapitalize={ type == 'email' ? 'none' : false }
+               autoCapitalize={ type == 'email' ? 'none' : undefined }
                autoCorrect="off"
                onChange={ onChange }
                placeholder={ hint }
